@@ -1,0 +1,154 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+body{
+    min-height: 120vh;
+    display: grid;
+    place-items: center;
+    color: #DCDCDC;
+    background-color: #23252C;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    width: 317px;
+    height: 780px;
+    text-align: center;
+    background-color: #1A1B21;
+    border-radius: 10px;
+}
+
+.dp-image{
+    width: 317px;
+    height: 317px;
+    border-radius: 10px 10px 0 0;
+}
+
+.intro{
+  padding: 20px;
+}
+
+.name{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.job{
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0.0.5rem 0 0 0;
+  color: #F3BF99;
+}
+
+.site{
+  padding: 0.4rem 0 0.6rem 0;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+button{
+  border-radius: 6px;
+  height: 2.1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.mail-icon{
+  padding: 0 3px 0 0;
+  margin: 0 3px 0 0;
+}
+
+.about-section{
+  padding: 0.5rem 1.5rem 0 1.5rem;
+  text-align: left;
+}
+
+
+.about-section > p{
+  font-size: 11px;
+  padding: 0.3rem 0 1rem 0;
+}
+
+.social-section{
+  background-color: #161619;
+  margin: 1.22rem 0 0 0;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0 0 10px 10px;
+}
